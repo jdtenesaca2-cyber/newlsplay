@@ -518,14 +518,14 @@ footer p { font-size:.78rem; color:var(--text-mu); }
       <div class="xpr"><span class="xpl">Tu progreso XP</span><span class="xpv" id="xpVal">0/500 XP</span></div>
       <div class="xpbg"><div class="xpf" id="xpFill" style="width:0%"></div></div>
     </div>
-    <div class="sh"><div class="sl">🎯 Actividades</div><div class="st">¿Qué quieres hacer hoy?</div><div class="tl"></div></div>
+    <div class="sh"><div class="sl"> Actividades</div><div class="st">¿Qué quieres hacer hoy?</div><div class="tl"></div></div>
     <div class="ag">
       <div class="ac" onclick="go('aprender')"><div class="aci aci-g"><i class="fas fa-book-open"></i></div><div><h3>Aprender</h3><p>Explora el abecedario y vocabulario con imágenes reales de señas.</p></div><span class="ac-badge bn">Nuevo</span></div>
-      <div class="ac" onclick="go('jugar')"><div class="aci aci-o"><i class="fas fa-gamepad"></i></div><div><h3>Jugar</h3><p>Niveles que se desbloquean al aprender. ¡Gana estrellas y demuestra lo aprendido!</p></div><span class="ac-badge bh">🔥 Hot</span></div>
+      <div class="ac" onclick="go('jugar')"><div class="aci aci-o"><i class="fas fa-gamepad"></i></div><div><h3>Jugar</h3><p>Niveles que se desbloquean al aprender. ¡Gana estrellas y demuestra lo aprendido!</p></div><span class="ac-badge bh"></span></div>
       <div class="ac" onclick="go('instructor')"><div class="aci aci-p"><i class="fas fa-chalkboard-teacher"></i></div><div><h3>Instructor</h3><p>Guías visuales, verbos y metodología educativa para aprender mejor.</p></div></div>
     </div>
     <div style="margin-top:52px">
-      <div class="sh"><div class="sl">✨ Por qué LSPlay</div><div class="st">Todo lo que necesitas</div><div class="tl"></div></div>
+      <div class="sh"><div class="sl"> Por qué LSPlay</div><div class="st">Todo lo que necesitas</div><div class="tl"></div></div>
       <div class="fg">
         <div class="fc"><i class="fas fa-trophy" style="color:var(--yellow)"></i><h4>Gamificación</h4><p>Puntos, estrellas y niveles que te mantienen motivado.</p></div>
         <div class="fc"><i class="fas fa-image" style="color:var(--primary)"></i><h4>Imágenes Reales</h4><p>Fotos auténticas de señas para aprender visualmente.</p></div>
@@ -548,6 +548,8 @@ footer p { font-size:.78rem; color:var(--text-mu); }
     <p>© 2026 LSPlay — Plataforma Educativa de Lengua de Señas</p>
   </footer>
 </div>
+
+
 
 <!-- ═══ APRENDER ═══ -->
 <div class="view" id="view-aprender">
@@ -607,7 +609,7 @@ footer p { font-size:.78rem; color:var(--text-mu); }
 
 <!-- ═══ JUGAR ═══ -->
 <div class="view" id="view-jugar">
-  <div class="ph"><div class="phi po"><i class="fas fa-gamepad"></i></div><h1>¡Aventura! 🎮</h1><p>Los niveles se desbloquean al completar el anterior</p></div>
+  <div class="ph"><div class="phi po"><i class="fas fa-gamepad"></i></div><h1>¡Aventura! </h1><p>Los niveles se desbloquean al completar el anterior</p></div>
   <div class="hud">
     <div class="hudi">
       <div class="hs"><i class="fas fa-star" style="color:var(--yellow)"></i><div><div class="hs-n" id="hS">0</div><div class="hs-l">Estrellas</div></div></div>
@@ -618,7 +620,7 @@ footer p { font-size:.78rem; color:var(--text-mu); }
   </div>
   <div class="lvsec">
     <div class="secheader">
-      <div><div class="sl">🗺️ Mapa de aventura</div><div class="st">Selecciona un Nivel</div><div class="tl"></div></div>
+      <div><div class="sl"> Mapa de aventura</div><div class="st">Selecciona un Nivel</div><div class="tl"></div></div>
       <div class="fps">
         <button class="fp active" onclick="filterLv('all',this)"><i class="fas fa-th"></i> Todos</button>
         <button class="fp" onclick="filterLv('unlocked',this)"><i class="fas fa-lock-open"></i> Activos</button>
@@ -628,7 +630,7 @@ footer p { font-size:.78rem; color:var(--text-mu); }
     <div class="lvg" id="lvGrid"></div>
   </div>
   <div class="achsec">
-    <div class="sl" style="margin-bottom:7px">🏅 Colección</div>
+    <div class="sl" style="margin-bottom:7px"> Colección</div>
     <div class="st" style="margin-bottom:18px">Tus Logros</div>
     <div class="achg" id="achGrid"></div>
   </div>
@@ -638,7 +640,7 @@ footer p { font-size:.78rem; color:var(--text-mu); }
 <div class="view" id="view-instructor">
   <div class="ph"><div class="phi pp"><i class="fas fa-chalkboard-teacher"></i></div><h1>Guía del Instructor</h1><p>Recursos educativos y metodología inclusiva de LSPlay</p></div>
   <div class="sw">
-    <div class="sh"><div class="sl">📚 Metodología</div><div class="st">¿Cómo funciona LSPlay?</div><div class="tl"></div></div>
+    <div class="sh"><div class="sl"> Metodología</div><div class="st">¿Cómo funciona LSPlay?</div><div class="tl"></div></div>
     <div class="instg">
       <div class="instc"><div class="isti"><i class="fas fa-eye"></i></div><h3>Aprendizaje Visual</h3><p>Imágenes reales de señas para que cada gesto sea claro y preciso desde el inicio.</p></div>
       <div class="instc"><div class="isti"><i class="fas fa-stairs"></i></div><h3>Progresivo</h3><p>Contenido de menor a mayor dificultad. Cada estudiante avanza a su propio ritmo.</p></div>
@@ -646,14 +648,27 @@ footer p { font-size:.78rem; color:var(--text-mu); }
       <div class="instc"><div class="isti"><i class="fas fa-users"></i></div><h3>Inclusivo</h3><p>Diseñado para conectar personas oyentes con la comunidad sorda de forma efectiva.</p></div>
     </div>
     <div style="margin-top:44px">
-      <div class="sh"><div class="sl">🤲 Vocabulario Visual</div><div class="st">Verbos con Imágenes Reales</div><div class="tl"></div></div>
-      <div class="vg" id="instVG"></div>
+      <div class="sh"><div class="sl"></div><div class="st">Acerca de LSPlay</div><div class="tl"></div></div>
+      
     </div>
     <div style="margin-top:38px;background:linear-gradient(135deg,rgba(106,27,154,.05),rgba(46,125,50,.03));border:1.5px solid rgba(106,27,154,.14);border-radius:var(--r);padding:30px;text-align:center">
-      <i class="fas fa-camera" style="font-size:2.4rem;color:var(--secondary);display:block;margin-bottom:13px"></i>
-      <h3 style="font-family:'Nunito',sans-serif;font-weight:900;margin-bottom:7px">Detección IA con Cámara</h3>
-      <p style="color:var(--text-lt);font-size:.86rem;max-width:470px;margin:0 auto 16px">Próximamente: MediaPipe detectará tus señas en tiempo real para validar si las estás haciendo correctamente.</p>
-      <span style="background:rgba(106,27,154,.1);border:1px solid rgba(106,27,154,.18);color:var(--secondary);border-radius:18px;padding:5px 16px;font-size:.76rem;font-weight:700">🚀 Próximamente</span>
+      <i class="fas fa-bullseye"></i>
+      <h3 style="font-family:'Nunito',sans-serif;font-weight:900;margin-bottom:7px">Misión</h3>
+      <p style="color:var(--text-lt);font-size:.86rem;max-width:470px;margin:0 auto 16px">Brindar una plataforma educativa accesible que permita a cualquier persona aprender 
+                Lengua de Señas desde cero, fomentando la inclusión, la empatía y la comunicación sin barreras.</p>
+    </div>
+    <div style="margin-top:38px;background:linear-gradient(135deg,rgba(106,27,154,.05),rgba(46,125,50,.03));border:1.5px solid rgba(106,27,154,.14);border-radius:var(--r);padding:30px;text-align:center">
+      <i class="fas fa-eye"></i>
+      <h3 style="font-family:'Nunito',sans-serif;font-weight:900;margin-bottom:7px"> Visión</h3>
+      <p style="color:var(--text-lt);font-size:.86rem;max-width:470px;margin:0 auto 16px">Ser una plataforma de referencia en el aprendizaje de la Lengua de Señas, 
+                contribuyendo a una sociedad más inclusiva y consciente de la diversidad comunicativa.</p>
+    </div>
+    <div style="margin-top:38px;background:linear-gradient(135deg,rgba(106,27,154,.05),rgba(46,125,50,.03));border:1.5px solid rgba(106,27,154,.14);border-radius:var(--r);padding:30px;text-align:center">
+      <i class="fas fa-leaf"></i>
+      <h3 style="font-family:'Nunito',sans-serif;font-weight:900;margin-bottom:7px">Objetivos de Desarrollo Sostenible</h3>
+      <p style="color:var(--text-lt);font-size:.86rem;max-width:470px;margin:0 auto 16px"> Contribuimos al <strong>ODS 4</strong> garantizando una educación inclusiva y de calidad a través 
+                del aprendizaje de la Lengua de Señas, y al <strong>ODS 10</strong> promoviendo la reducción de 
+                desigualdades y la inclusión de las personas con discapacidad auditiva.</p>
     </div>
   </div>
 </div>
@@ -675,7 +690,7 @@ footer p { font-size:.78rem; color:var(--text-mu); }
     </div>
   </div>
   <div class="gr" id="gameResult">
-    <div class="remoji" id="rEmoji">🎉</div>
+    <div class="remoji" id="rEmoji"></div>
     <h2 style="font-family:'Nunito',sans-serif;font-size:2.1rem;font-weight:900;margin-bottom:7px" id="rTitle">¡Excelente!</h2>
     <div class="rstars" id="rStars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
     <div class="rscore" id="rScore">850 pts</div>
