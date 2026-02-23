@@ -786,6 +786,37 @@ const ABC_TIPS = {
 };
 
 
+const ABC_FACTS = {
+  'A':'La A es la vocal más frecuente del español (12.5%). Seña: puño firme.',
+  'B':'La B en LSP es similar a otros sistemas de señas internacionales.',
+  'C':'La C es muy intuitiva: la mano imita perfectamente la forma de la letra.',
+  'D':'La D requiere precisión para no confundirla con la O.',
+  'E':'La E parece una zarpa. Los dedos rascan como la forma de la letra.',
+  'F':'El símbolo OK de la F también expresa aprobación en muchas culturas.',
+  'G':'La G señala horizontalmente, diferente a la mayoría que apuntan arriba.',
+  'H':'La H usa dos dedos juntos horizontales, como las dos líneas de la H.',
+  'I':'La I usa solo el meñique, el más pequeño para la letra más sencilla.',
+  'J':'La J incluye movimiento: de las pocas letras dinámicas del abecedario.',
+  'K':'La K tiene posición compleja pero única, fácil de recordar con práctica.',
+  'L':'La L es la más intuitiva: la mano forma exactamente la letra.',
+  'M':'La M cubre tres dedos, representando sus tres patas/puntas.',
+  'N':'Similar a M pero con dos dedos, como las dos patas de la N.',
+  'Ñ':'La Ñ es exclusiva del español y tiene seña especial en LSP.',
+  'O':'La O forma un círculo perfecto, idéntica a la forma de la letra.',
+  'P':'La P apunta hacia abajo, diferente a la mayoría que apuntan arriba.',
+  'Q':'La Q es la letra menos usada del español, solo aparece antes de U.',
+  'R':'Los dedos cruzados son fáciles de recordar: cruzar para la buena suerte.',
+  'S':'La S con el pulgar encima difiere de la A donde el pulgar va al lado.',
+  'T':'La T tiene el pulgar entre los dedos, posición única y reconocible.',
+  'U':'La U usa dos dedos juntos: sencilla y directa como el sonido U.',
+  'V':'La V es universal: Victoria. Reconocida en muchos sistemas de señas.',
+  'W':'La W usa tres dedos, representando sus tres picos. Letra del inglés.',
+  'X':'La X en forma de garfio recuerda al signo matemático de multiplicación.',
+  'Y':'La Y es el famoso shaka hawaiano, usado para relajarse o llamar.',
+  'Z':'La Z traza su forma en el aire: dibuja completamente su figura.'
+};
+
+
 const VERBOS = [
   {key:'hola',   emoji:'👋', word:'Hola',     desc:'Agitar la mano abierta de lado a lado'},
   {key:'hi',     emoji:'🙌', word:'Hola 2',   desc:'Ambas manos abiertas elevándose al frente'},
@@ -904,7 +935,8 @@ function updateABC(){
   document.getElementById('bigL').textContent=l;
   document.getElementById('lHuge').textContent=l;
   document.getElementById('lCount').textContent=(ST.abcI+1)+' / '+ALPHABET.length;
-
+  document.getElementById('abcTip').textContent=ABC_TIPS[l]||'Practica frente al espejo.';
+  document.getElementById('abcFact').textContent=ABC_FACTS[l]||'La letra '+l+' tiene su seña única en LSP.';
 
   const box=document.getElementById('abcImgBox');
   if(SIGN_IMGS[l]){
